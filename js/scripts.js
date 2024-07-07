@@ -1,7 +1,1 @@
-function mudouTamanho() {
-    if (window.innerWidth >= 800) {
-        m2.style.display = 'block'
-    } else {
-        m2.style.display = 'none'
-    }
-}
+alert ('Hello, World! this is my clone of website Screen Login of ChatGPT')
