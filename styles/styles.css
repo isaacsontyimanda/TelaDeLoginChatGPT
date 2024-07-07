@@ -1,19 +1,25 @@
 @charset "UTF-8";
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     background: #000000;
     color: #fffcff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 menu.logo {
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 180px;
+    margin: 30px 30px 180px 30px;
 }
 
 menu.logo > h1 {
@@ -22,12 +28,11 @@ menu.logo > h1 {
 }
 
 t {
-   font-size: .8em; 
+    font-size: 0.8em;
 }
 
 div.opc {
     text-align: center;
-    
 }
 
 h2 {
@@ -45,17 +50,19 @@ a.link {
 
 p.p1 {
     display: block;
-    width: 440px;
+    width: 90%;
+    max-width: 440px;
     line-height: 2em;
     background: #0066dd;
     border-radius: 20px;
     padding: 4px;
     margin: auto;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 
 footer {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     background: #0066dd;
     font-weight: regular;
     text-align: center;
@@ -86,23 +93,34 @@ menu.m2 > h1 {
     display: none;
 }
 
-@media screen and (min-width: 375px) {
+/* Para telas de 375px de largura */
+@media screen and (max-width: 375px) {
     p.p1 {
-        width: 300px;
+        width: 90%;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    a.link {
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 645px) {
-    
     div.contain {
         display: flex;
         justify-content: center;
     }
 
     p.p1 {
-        display: block;
         width: 240px;
-        margin: 0px 5px;
+        margin: 0 5px;
     }
 
     footer {
@@ -111,7 +129,6 @@ menu.m2 > h1 {
 }
 
 @media screen and (min-width: 800px) {
-
     menu.logo > h1 {
         display: none;
     }
@@ -121,70 +138,66 @@ menu.m2 > h1 {
     }
 
     div.content0 {
-        width:  800px;
+        width: 800px;
         background: #00002e;
     }
 
     menu.m2 {
-            margin-top: 30px;
-            margin-left: 30px;
-            margin-bottom: 180px;
-        }
-        
-        menu.m2 > h1 {
-            background: #00002e;
-            color: #d292ff;
-            font-weight: bold;
-            font-size: 24px;
-        }
-        
-        .bcg {
-            background: #00002e;
-        }
+        margin: 30px 30px 180px 30px;
+    }
 
-        h2.t1 {
-            color: #d292ff;
-            font-size: 40px;
-            margin-left: 20px;
-        }
+    menu.m2 > h1 {
+        background: #00002e;
+        color: #d292ff;
+        font-weight: bold;
+        font-size: 24px;
+    }
 
-        p.t2 {
-            color: #d292ff;
-            font-size: 40px;
-            font-size: normal;
-            text-align: left;
-            margin-left: 20px;
-        }
+    .bcg {
+        background: #00002e;
+    }
 
-        div.content {
-            height: 100vh;
-            background: #000000;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    h2.t1 {
+        color: #d292ff;
+        font-size: 40px;
+        margin-left: 20px;
+    }
 
-        menu.m2 > h1 {
-            display: block;
-        }
-    
-        .bcg {
-            display: block;
-        }
+    p.t2 {
+        color: #d292ff;
+        font-size: 40px;
+        text-align: left;
+        margin-left: 20px;
+    }
 
-        h2 {
-            margin-top: 240px;
-        }
+    div.content {
+        height: 100vh;
+        background: #000000;
+        margin: auto;
+    }
 
-        footer {
-            margin-top: 230px;
-        }
+    menu.m2 > h1 {
+        display: block;
+    }
+
+    .bcg {
+        display: block;
     }
 
     h2 {
-        font-size: 20px;
+        margin-top: 240px;
     }
 
-    a.link {
-        font-size: 16px;
-        font-weight: bold;
+    footer {
+        margin-top: 230px;
     }
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a.link {
+    font-size: 16px;
+    font-weight: bold;
+}
