@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    background: #ffffff;
+    color: #333;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 4%);
+}
+
+menu.contain {
+    display: inline;
+    text-align: center;
+}
+
+menu.contain > div > img.logo0 {
+    width: 32px;
+    margin-top: 30px;
+}
+
+menu.contain > h1 {
+    font-size: 30px;
+    margin-top: 37px;
+}
+
+div.contain1 {
+    display: block;
+    margin: auto;
+}
+
+div.inema > input {
+    display: block;
+    width: 280px;
+    height: 45px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.cont {
+    width: 280px;
+    height: 45px;
+    background: #0fa37f;
+    text-align: center;
+    line-height: 2.5em;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+div.cont > a {
+    color: #ffffff;
+}
+
+div.account {
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.account > a {
+    color: #0fa37f;
+}
+
+div.ou {
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.gma {
+    width: 280px;
+    height: 45px;
+    text-align: left;
+    line-height: 2.5em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding-left: 14px;
+    margin-top: 10px;
+}
+
+div.gma:hover {
+    background: #3333331e;
+}
+
+div.gma > a {
+    color: #333;
+}
+
+p.foot {
+    text-align: center;
+    margin-top: 40px;
+}
+
+p.foot > a {
+    color: #0fa37f;
+}
+
+a.links {
+    text-decoration: none;
+}
