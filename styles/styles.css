@@ -12,10 +12,6 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 menu.logo {
@@ -129,21 +125,35 @@ menu.m2 > h1 {
 }
 
 @media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
     menu.logo > h1 {
         display: none;
     }
 
     div.contain2 {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
     }
 
     div.content0 {
-        width: 800px;
+        width: 50%;
         background: #00002e;
+        padding: 30px;
     }
 
     menu.m2 {
-        margin: 30px 30px 180px 30px;
+        margin: 0;
     }
 
     menu.m2 > h1 {
@@ -151,53 +161,52 @@ menu.m2 > h1 {
         color: #d292ff;
         font-weight: bold;
         font-size: 24px;
+        margin-bottom: 20px;
     }
 
     .bcg {
         background: #00002e;
+        display: block;
     }
 
     h2.t1 {
         color: #d292ff;
-        font-size: 40px;
-        margin-left: 20px;
+        font-size: 32px;
+        margin-bottom: 20px;
     }
 
     p.t2 {
         color: #d292ff;
-        font-size: 40px;
-        text-align: left;
-        margin-left: 20px;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
     div.content {
+        width: 50%;
         height: 100vh;
         background: #000000;
-        margin: auto;
+        padding: 30px;
+        box-sizing: border-box;
     }
 
-    menu.m2 > h1 {
-        display: block;
-    }
-
-    .bcg {
-        display: block;
+    div.opc {
+        margin-top: 60px;
     }
 
     h2 {
-        margin-top: 240px;
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    p.p1 {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto 10px auto;
     }
 
     footer {
-        margin-top: 230px;
+        width: 80%;
+        max-width: 300px;
+        margin: 40px auto 0 auto;
     }
-}
-
-h2 {
-    font-size: 20px;
-}
-
-a.link {
-    font-size: 16px;
-    font-weight: bold;
 }
